@@ -147,3 +147,152 @@ input:focus {
     font-size: 14px;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #7f2bd7;
+  --secondry-color: #091b29;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  outline-style: none;
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.left_container {
+  width: 52%;
+  padding: 1rem;
+}
+
+.left_container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h2 span {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.skill {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+.left_container p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  font-size: 1rem;
+  background-color: var(--secondry-color);
+  border: 1px solid var(--secondry-color);
+  border-radius: 8px;
+  box-shadow: 0 16px 22px -17px var(--secondry-color);
+  color: #fff;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 12px 20px;
+  z-index: 999;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn_contact {
+  margin: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn:focus {
+  outline-style: none;
+}
+.btn_contact:hover {
+  background-color: var(--secondry-color);
+  border: 1px solid var(--secondry-color);
+}
+.right_container {
+  width: 48%;
+}
+
+.right_container img {
+  width: 100%;
+}
+
+.speed_controler {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(30, 94, 190, 0.3);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+label {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+}
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1.1rem;
+  background-color: var(--secondry-color);
+  color: #fff;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+}
+input:focus {
+  outline: none;
+}
+@media only screen and (max-width: 980px) {
+  body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .left_container {
+    width: 90%;
+  }
+  .right_container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .left_container {
+    width: 100%;
+  }
+  h1,
+  h2,
+  span {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 14px;
+  }
+}
